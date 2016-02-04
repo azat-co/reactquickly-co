@@ -720,3 +720,7 @@ padding: 5px;
 .socials li a:hover {
     color: #2468A9;
 }
+#about a {
+  color: #fff;
+  text-decoration: underline;
+}
