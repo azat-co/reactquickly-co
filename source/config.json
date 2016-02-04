@@ -1,0 +1,67 @@
+{
+  "locals": {
+    "name": "React Quickly by Azat Mardan",
+    "url": "http://localhost:8080/",
+    "description": "Book React Quickly by Azat Mardan",
+    "keywords": "React, JXS, DOM, Babel, Gulp, ES6, book, ReactJS, MEAP, MEAN, Node.JS, Node JS, NodeJS, javascript",
+    "author": "Azat Mardan",
+    "videoTitle1": "Chapter 1 - Menu with React",
+    "videoUrl1": "https://www.youtube.com/embed/WrG3eZ8cMAk",
+    "videoTitle2": "Chapter 2 - Tooltip with React",
+    "videoUrl2": "https://www.youtube.com/embed/MBO7X0ViAug",
+    "videoTitle3": "Chapter 3 - Timer with JSX and React",
+    "videoUrl3": "https://www.youtube.com/embed/PtLEh-kCJWc",
+    "videoTitle4": "Chapter 4 - Rock Paper Scissors with Meteor and React",
+    "videoUrl4": "https://www.youtube.com/embed/FT5SbKmKIL4",
+    "videoTitle5": "Chapter 5 - Chat with Meteor and React",
+    "videoUrl5": "https://www.youtube.com/embed/_rd7K4-Dbb4",
+    "videoTitle6": "Chapter 6 - Message Board with Reflux, Express and React",
+    "videoUrl6": "https://www.youtube.com/embed/-AaihnkeoYM",
+    "videoTitle7": "Chapter 6 - Message Board with Reflux, Express and React 2",
+    "videoUrl7": "https://www.youtube.com/embed/wAeaRiDMjMQ",
+    "videoTitle8": "Chapter 7 - Password Widget with React",
+    "videoUrl8": "https://www.youtube.com/embed/724SjhA_6D0",
+    "videoTitle9": "Chapter 7 - Password Widget with React 2",
+    "videoUrl9": "https://www.youtube.com/embed/haIo-6pem_c",
+    "videoTitle10": "Chapter 7 - Password Widget with React 3",
+    "videoUrl10": "https://www.youtube.com/embed/gkKyNg491SE",
+    "videoTitle11": "Chapter 8 - Autocomplete Widget with Express and React",
+    "videoUrl11": "https://www.youtube.com/embed/FdTG7WIjhcs",
+    "videoTitle12": "Chapter 8 - Autocomplete Widget with Express and React 2",
+    "videoUrl12": "https://www.youtube.com/embed/nPZ0obGz_5w",
+    "videoTitle13": "Chapter 8 - Autocomplete Widget with Express and React 3",
+    "videoUrl13": "https://www.youtube.com/embed/PpBYw87ReI0",
+    "videoTitle14": "Chapter 8 - Autocomplete Widget with Express and React 4",
+    "videoUrl14": "https://www.youtube.com/embed/6dgZR9-Cps0",
+    "videoTitle15": "Chapter 9 - Weather Mobile App with React Native",
+    "videoUrl15": "https://www.youtube.com/embed/_kVXZKKKTEc",
+    "videoTitle16": "Chapter 9 - Weather Mobile App with React Native 2",
+    "videoUrl16": "https://www.youtube.com/embed/qvWX-7jJk4k",
+    "videoTitle17": "Chapter 9 - Weather Mobile App with React Native 3",
+    "videoUrl17": "https://www.youtube.com/embed/CVSah5me_XI",
+    "videoTitle18": "Chapter 10 - Nile Store with Webpack, React and React Router",
+    "videoUrl18": "https://www.youtube.com/embed/P8KUl6FRvgk",
+    "videoTitle19": "Chapter 10 - Nile Store with Webpack, React and React Router 2",
+    "videoUrl19": "https://www.youtube.com/embed/Zn5e4yvK8HE"
+  },
+  "nunjucks": {
+    "autoescape": false
+  },
+  "plugins": [
+    "wintersmith-browserify",
+    "wintersmith-less",
+    "wintersmith-nunjucks",
+    "wintersmith-livereload",
+    "./plugins/paginator.coffee"
+  ],
+  "browserify": {
+    "extensions": [
+      ".js",
+      ".coffee"
+    ]
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}

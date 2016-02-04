@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<!--========================
+======= Video Section =======
+=========================-->
+<section id="home">
+    <div class="coloroverlay-video"> <!-- Start background color overlay-->
+        <div class="container"> <!-- Start container -->
+            <div class="row"> <!-- Start row -->
+
+                <!-- Start content -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+
+                    <div class="wow fadeInDown"><a href="#"><img src="{{contents.img['logo.png'].url}}" class="logo" alt="logo"></a></div><!-- This is your logo -->
+
+                    <div class="text space wow fadeInDown" data-wow-delay=".5s"> <!-- This is your text content -->
+                        <h1>React Quickly</h1>
+                        <h4>by {{author}}</h4>
+                        <h2 class="text-center">{{page.title}}</h2>
+                    </div> <!-- End of your text content -->
+
+                    <div class="col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <div class="videoWrapper wow fadeInDown" data-wow-delay=".5s"> <!-- video -->
+                        <iframe width="560" height="315" src="{{page.metadata.author}}" allowfullscreen></iframe> <!-- YouTube video link here -->
+                      </div>
+                      <div class="text space wow fadeInDown" data-wow-delay=".5s"> <!-- This is your text content -->
+                          <p>Very interesting React Quickly video that show you new procedures and other things that you didn't know before. We are strongly recomend to want this video.</p>
+                      </div> <!-- End of your text content -->
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2"></div>
+
+                </div> <!-- End content-->
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </div> <!-- End background color overlay-->
+    <div class="clearfix"></div>  <!-- Clearfix -->
+</section>
+
+{% endblock %}
+
+{% block aftervideo %}
+
+<!--========================
+===== Book Section =====
+=========================-->
+<section id="overview" class="light">
+    <div class="container"> <!--  Start container -->
+        <div class="row"> <!-- Start row -->
+
+            <!-- Start right content -->
+            <div class="col-sm-6 col-md-6 col-lg-6 wow bounceInLeft">
+                <img src="{{contents.img.books['01_2.png'].url}}" class="img-responsive" alt="img"> <!-- Your book image display here -->
+            </div> <!-- End right content -->
+
+            <!-- Start Left content -->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="text space wow fadeInDown" data-wow-delay=".5s"> <!-- This is your text content -->
+                    <h4>What this book about</h4>
+                    <p>React Quickly is for anyone who wants to learn React.js fast. This hands-on book teaches you the concepts you need with lots of examples, tutorials, and a large main project that gets built throughout. You'll start with the basics, including how React fits in your application, JSX, and handling states and events. Next, you’ll learn about the core topics like components, forms and and data.</p>
+
+                    <p>Finally, you’ll dive into React integration topics, like unit testing and isomorphic JavaScript with Express.js, and Gulp.</p>
+                </div> <!-- End of your text content -->
+                <br>
+                <a href="#reviews" class="page-scroll btn btn-colored wow fadeInDown" data-wow-delay="1s"> <span class="fa fa-comments-o"></span> Reviews</a> <!-- Learn more button link-->
+                <a href="#download" class="page-scroll btn btn-lined wow fadeInDown" data-wow-delay="1s"><span class="fa fa-shopping-cart"></span> Buy the Book</a> <!-- Download more button link-->
+            </div> <!-- End left content-->
+
+        </div> <!--  End row -->
+
+    </div><!--  End container -->
+    <div class="clearfix"></div> <!-- Clearfix -->
+</section>
+
+{% endblock %}
