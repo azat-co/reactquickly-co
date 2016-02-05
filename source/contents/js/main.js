@@ -1,5 +1,6 @@
-    jQuery(document).ready(function($) {
-   'use strict';
+'use strict';
+jQuery(document).ready(function($) {
+
 
 
         //Preloader Script
@@ -115,25 +116,26 @@
                 itemsMobile : [ 480,1]
             });
 
+        // debugger
+        // // Content Animation Effects using Wow.js Plugin
+        // var wow = new WOW( {
+        //     boxClass:     'wow',      // animated element css class (default is wow)
+        //     animateClass: 'animated', // animation css class (default is animated)
+        //     offset:       0,          // distance to the element when triggering the animation (default is 0)
+        //     mobile:       true,       // trigger animations on mobile devices (default is true)
+        //     live:         true        // act on asynchronously loaded content (default is true)
+        //     });
+        // wow.init();
 
-        // Content Animation Effects using Wow.js Plugin
-        var wow = new WOW( {
-            boxClass:     'wow',      // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset:       0,          // distance to the element when triggering the animation (default is 0)
-            mobile:       true,       // trigger animations on mobile devices (default is true)
-            live:         true        // act on asynchronously loaded content (default is true)
-            });
-        wow.init();
-
-
+        // console.log($('.mailchimp'));
         //Mailchimp Subscription Integration
         $('.mailchimp').ajaxChimp({
             callback: mailchimpCallback,
-            url: "http://jennylynpereira.us8.list-manage.com/subscribe/post?u=d594f4d2197a205cf487f3525&amp;id=a9e603bfd5" //Replace this with your own mailchimp post URL. Don t remove the "". Just paste the url inside "".
+            url: "http://rpjs.us7.list-manage.com/subscribe/post?u=36e6fbd670f90424e85a36feb&amp;id=da2c575ff8" //Replace this with your own mailchimp post URL. Don t remove the "". Just paste the url inside "".
         });
 
         function mailchimpCallback(resp) {
+          // console.log('yo');
              if (resp.result === 'success') {
                 $('.subscription-success').html('<i class="fa fa-thumbs-up"></i><br/>' + resp.msg).fadeIn(1000);
                 $('.subscription-error').fadeOut(500);
