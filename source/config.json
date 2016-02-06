@@ -1,6 +1,7 @@
 {
   "output": "../",
   "locals": {
+    "buyManningUrl": "https://www.manning.com/books/react-quickly?a_aid=a&a_bid=5064a2d3",
     "name": "React Quickly by Azat Mardan",
     "url": "http://reactquickly.co/",
     "description": "Book React Quickly by Azat Mardan",
