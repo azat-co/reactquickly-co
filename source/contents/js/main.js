@@ -118,14 +118,14 @@ jQuery(document).ready(function($) {
 
         // debugger
         // // Content Animation Effects using Wow.js Plugin
-        // var wow = new WOW( {
-        //     boxClass:     'wow',      // animated element css class (default is wow)
-        //     animateClass: 'animated', // animation css class (default is animated)
-        //     offset:       0,          // distance to the element when triggering the animation (default is 0)
-        //     mobile:       true,       // trigger animations on mobile devices (default is true)
-        //     live:         true        // act on asynchronously loaded content (default is true)
-        //     });
-        // wow.init();
+         var wow = new WOW( {
+             boxClass:     'wow',      // animated element css class (default is wow)
+             animateClass: 'animated', // animation css class (default is animated)
+             offset:       0,          // distance to the element when triggering the animation (default is 0)
+             mobile:       true,       // trigger animations on mobile devices (default is true)
+             live:         true        // act on asynchronously loaded content (default is true)
+             });
+         wow.init();
 
         // console.log($('.mailchimp'));
         //Mailchimp Subscription Integration
@@ -143,5 +143,5 @@ jQuery(document).ready(function($) {
             } else if(resp.result === 'error') {
                 $('.subscription-error').html('<i class="fa fa-warning"></i><br/>' + resp.msg).fadeIn(1000);
             }
-        };
+        }
     });
