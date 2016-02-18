@@ -553,6 +553,31 @@ i.fa.fa-2x {
     position: relative;
 }
 
+#follow-button {
+    position: relative;
+    height: 20px;
+    padding: 1px 6px 1px 6px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1b95e0;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+#follow-label {
+    font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+}
+#follow-label, i, b {
+    vertical-align: top;
+    zoom: 1;
+}
+#follow-button > i {
+    vertical-align: text-top;
+}
+
 /**************************
 **** About the Author ****
 **************************/
