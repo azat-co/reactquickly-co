@@ -191,6 +191,16 @@ img.logo { height: 40px }
     padding-top: 120px;
     background: rgba(0, 90, 143, 0.9);
 }
+#home.resources .coloroverlay-video {
+  background: rgba(0, 90, 143, 1);
+}
+#home.resources .coloroverlay-video a {
+  color: white;
+  text-decoration: underline;
+}
+#home.resources .coloroverlay-video ul {
+  list-style: circle;
+}
 .btn-colored {
     padding: 15px 25px;
     background-color: #2468A9;
@@ -753,4 +763,7 @@ padding: 5px;
 .video-desc a {
   color: #000;
   text-decoration: underline;
+}
+#home ul il a {
+  color: white !important;
 }
