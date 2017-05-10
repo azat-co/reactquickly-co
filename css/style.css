@@ -201,6 +201,9 @@ img.logo { height: 40px }
 #home.resources .coloroverlay-video ul {
   list-style: circle;
 }
+#home.resources #mc_embed_signup_scroll input {
+  color: black
+}
 .btn-colored {
     padding: 15px 25px;
     background-color: #2468A9;
